@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input {
+            width: 230px;
+        }
+        button {
+            padding: 15px;
+        }
+
+        .container {
+            border: 1px red solid;
+            max-width: 650px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <label for="arr">Введите число</label>
+        <input type="text" id="arr">
+        <button type="button" id="submit-btn">Подтвердить</button>
+        <button type="button" id="clear">Очистить список</button>
+        <div class="your-array">
+            <p>Ваш список: [ <span id="list-of-numbers"></span> ]</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <p>Ваши действия?:</p>
+        <button type="button" id="sum">Суммировать</button>
+        <button type="button" id="average">Среднее зн.</button>
+        <p id="result-of-action"></p>
+    </div>   
+
+    <script src="main.js"></script>
+</body>
+</html>
